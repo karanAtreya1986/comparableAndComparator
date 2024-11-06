@@ -1,0 +1,48 @@
+Compareto-
+Returns >0 if the first value is higher than compared value. It will move this higher value to end.
+Returns =0 if both the values being compared are same, then it wont move anything anywhere.
+Returns <0, if the first value is lower than compared value. It will move this lower value at start.
+
+Compareto-
+>0  means lhs value is greater than rhs value.
+=0 means lhs value is equal to rhs value.
+<0 means lhs value is less than rhs value.
+
+Comparable vs comparator-
+Both are interfaces.
+Comparable has compareto() method. >, <, = three possibilities.
+Comparator has compare() method.
+Why we need them?
+To do object comparison.
+Sorting objects in ascending order.
+
+
+when sorting custom class or objects we get class cast exception .......
+This is because sort doesn’t know how to sort objects as they are not data/values.
+
+Compare() and compareto() returns int only. So all output should be cast to int.
+Compareto()-
+>0 -> LHS > RHS value
+=0 -> LHS = RHS value
+<0 –> LHS < RHS value
+
+
+To sort primitive data, collections, strings, actual value/actual data, we the sort method. To sort objects, we only have comparable or comparator.
+To print the arrays data – arrays.tostring() so as not to print memory address.
+Existing primitive, strings, wrapper, collection is easy to sort.
+Sorting objects is little tedious.
+
+
+
+Comparable can only sort in ascending order.
+We cannot have multiple implementations of compareto() at a time in a single class. What if we want to sort based on multiple values in a single class.
+Comparator to the rescue. Sort by multiple things in one class.
+
+
+Compare and compareto returns only int. so you want your return type to be int only.
+
+Comparable can be used for one attribute at a time.
+Multiple attributes to be sorted, use comparator.
+Comparable gives compareto method with one argument.
+Comparator gives compare method with two arguments.
+
